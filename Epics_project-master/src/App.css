@@ -1,0 +1,300 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(249, 239, 239);
+  color:black;
+  text-align: center;
+  /* background: linear-gradient(to right, #25a922, #00A651); */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-family: 'Garamond', serif;
+  color:#191970
+  ;
+  background-color:#D8BFD8;
+  /* background: linear-gradient(to right, #129ec2, #ecedda);
+  text-align: center;
+  color: transparent;
+-webkit-background-clip: text; */
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+/* Overall container for the page */
+.dashboard-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Left text section styling */
+.text-section {
+  max-width: 500px;
+  flex: 1;
+  padding: 40px;
+  color:black
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  font-family: 'Garamond', serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  color: #f0df4d;
+  margin-bottom: 40px;
+}
+
+/* Right image section styling */
+.image-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.dashboard-image {
+  max-width: 400px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.dashboard-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .dashboard-image {
+    width: 80%;
+  }
+}
+
+.Top {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Outer container styling */
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  min-height: 80vh;
+  
+}
+
+/* Container for the image upload input */
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  /* margin-top: 0px; */
+  border:1px solid blue;
+}
+
+/* Camera image */
+.camera-image {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Placeholder text beside the camera image */
+.placeholder-text {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/* Displayed image container */
+.display-image {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width:50px;
+  height:50px; */
+  gap: 20px;
+
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.uploaded-image {
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Upload container styles */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.image-upload {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+
+/* Left floating image styling */
+.left-image {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+  max-width: 9rem;
+  width: 4.69%;
+  height: auto;
+  z-index: 2;
+  margin-top: 40px;
+  transition: transform 0.5s ease;
+}
+
+.left-image:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the hidden file input */
+input[type="file"] {
+  display: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+/* Color Palette */
+
+
+.accent-color {
+  color: #ff6600;
+}
+
+/* Layout and Spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animations and Transitions */
+.button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.upload{
+  background-color:beige;
+  width:120px;
+  height:40px;
+
+}
+
+.iwatch-image{
+  
+  width: 300px;
+  height: 200px;
+  border-radius: 50%; /* For a circular shape */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); Add a subtle shadow */
+  position: absolute; /* Position the watch on the right side */
+  bottom: 20px;
+  right: 20px;
+  margin-right:200px;
+
+      
+}
+
+
+.calorie{
+  color:black;
+  font-size:20px;
+  margin-top:30px;
+  margin-bottom:10px;
+}
